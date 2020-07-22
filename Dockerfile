@@ -1,8 +1,8 @@
 FROM golang:1.14.6 as builder
 
-WORKDIR $GOPATH/src/github.com/apuigsech/circuit/models/namespace
+WORKDIR $GOPATH/src/github.com/apuigsech/circuit/models/namespaces
 COPY . .
-RUN go build -o bin/namespace .
+RUN go build -o /bin/namespaces .
 
 FROM alpine
 
