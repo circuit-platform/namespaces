@@ -4,7 +4,7 @@ WORKDIR $GOPATH/src/github.com/apuigsech/circuit/models/namespace
 COPY . .
 RUN go build -o bin/namespace .
 
-FROM: alpine
+FROM alpine
 
 COPY --from=builder /bin/namespaces /bin/namespaces
 
