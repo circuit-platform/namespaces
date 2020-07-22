@@ -1,4 +1,4 @@
-package main
+package model
 
 import (
 	"github.com/rs/rest-layer/schema"
@@ -6,15 +6,15 @@ import (
 	
 	"github.com/apuigsech/rest-layer-sql"
 
-	models "github.com/circuit-platform/models-utils"
+	utils "github.com/circuit-platform/models-utils"
 )
 
 var (
 	Namespace = schema.Schema{
 		Fields: schema.Fields{
 			"id": schema.IDField,
-			"created": models.CreatedField,
-			"updated": models.UpdatedField,
+			"created": utils.CreatedField,
+			"updated": utils.UpdatedField,
 			"name": schema.Field{
 				Required: true,
 				Filterable: true,
@@ -28,8 +28,8 @@ var (
 	NamespaceSetting = schema.Schema{
 		Fields: schema.Fields{
 			"id": schema.IDField,
-			"created": models.CreatedField,
-			"updated": models.UpdatedField,
+			"created": utils.CreatedField,
+			"updated": utils.UpdatedField,
 			"namespace": {
 				Required:   true,
 				Filterable: true,
@@ -63,13 +63,13 @@ func CreateNamespacesIndex(databaseSource string, databaseSchema string) resourc
 		databaseSchema = databaseSchema + "."
 	}
 
-	namespaces := index.Bind("namespaces", Namespace, models.CreateStorerOrDie(databaseSource, databaseSchema + "namespaces",
+	namespaces := index.Bind("namespaces", Namespace, utils.CreateStorerOrDie(databaseSource, databaseSchema + "namespaces",
 		&sqlStorage.Config{},
 	), resource.Conf{
 		AllowedModes: resource.ReadWrite,
 	})
 
-	namespaces.Bind("settings", "namespace", NamespaceSetting, models.CreateStorerOrDie(databaseSource, databaseSchema + "namespaces_settings",
+	namespaces.Bind("settings", "namespace", NamespaceSetting, utils.CreateStorerOrDie(databaseSource, databaseSchema + "namespaces_settings",
 		&sqlStorage.Config{},
 	), resource.Conf{
 		AllowedModes: resource.ReadWrite,

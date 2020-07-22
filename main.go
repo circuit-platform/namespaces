@@ -1,9 +1,10 @@
 package main
 
 import (
-	models "github.com/circuit-platform/models-utils"
+	"github.com/circuit-platform/namespaces/model"
+	utils "github.com/circuit-platform/models-utils"
 )
 
 func main() {
-	models.Run(CreateNamespacesIndex)
+	utils.Run(model.CreateNamespacesIndex, nil)
 }

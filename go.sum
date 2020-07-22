@@ -3,6 +3,8 @@ github.com/apuigsech/rest-layer-sql v0.0.0-20200217220619-cf9c157299cc h1:H/PmkA
 github.com/apuigsech/rest-layer-sql v0.0.0-20200217220619-cf9c157299cc/go.mod h1:UOLeJRr4pnXOzv3e3RD+7kN/Jn+1/DkU1xvtuOI6a3Y=
 github.com/circuit-platform/models-utils v0.0.0-20200721161214-6e275236fd2d h1:BD7crERJFHqKmFW2W7Zyp8Nnue9Gz9UkVhy3zUZcwXg=
 github.com/circuit-platform/models-utils v0.0.0-20200721161214-6e275236fd2d/go.mod h1:roQhPnk42ukI70ncA690xiCqpLNxfJ+a8qX0e7AL0CA=
+github.com/circuit-platform/models-utils v0.0.0-20200722181532-aa779bad663b h1:EJE067jcoXGnrgArS7hA+6SN35n+Dh8l6LwuCyIqViU=
+github.com/circuit-platform/models-utils v0.0.0-20200722181532-aa779bad663b/go.mod h1:roQhPnk42ukI70ncA690xiCqpLNxfJ+a8qX0e7AL0CA=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/eapache/go-xerial-snappy v0.0.0-20180814174437-776d5712da21/go.mod h1:+020luEh2TKB4/GOp8oxxtq0Daoen/Cii55CzbTV6DU=
 github.com/evanphx/json-patch v4.1.0+incompatible h1:K1MDoo4AZ4wU0GIU/fPmtZg7VpzLjCxu+UwBD1FvwOc=
@@ -32,7 +34,6 @@ github.com/segmentio/kafka-go v0.3.7/go.mod h1:8rEphJEczp+yDE/R5vwmaqZgF1wllrl4i
 github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=
 github.com/xdg/scram v0.0.0-20180814205039-7eeb5667e42c/go.mod h1:lB8K/P019DLNhemzwFU4jHLhdvlE6uDZjXFejJXr49I=
 github.com/xdg/stringprep v1.0.0/go.mod h1:Jhud4/sHMO4oL310DaZAKk9ZaJ08SJfe+sJh0HrGL1Y=
-golang.org/x/crypto v0.0.0-20181127143415-eb0de9b17e85 h1:et7+NAX3lLIk5qUCTA9QelBjGE/NkhzYw/mhnr0s7nI=
 golang.org/x/crypto v0.0.0-20181127143415-eb0de9b17e85/go.mod h1:6SG95UA2DQfeDnfUPMdvaQW0Q7yPrPDi9nlGo2tz2b4=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/crypto v0.0.0-20190506204251-e1dfcc566284 h1:rlLehGeYg6jfoyz/eDqDU1iRXLKfR42nnNh57ytKEWo=
